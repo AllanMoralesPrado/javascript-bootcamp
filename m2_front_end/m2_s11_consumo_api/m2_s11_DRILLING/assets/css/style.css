@@ -1,0 +1,15 @@
+/*
+* Estilo para centrar y adaptar el contenedor al mensaje
+*/
+.card{
+    text-align: center;
+}
+
+.center {
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.css">
+    <title>NIRMODEL Restaurant y Pub</title>
+    <!--Inserción del favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/n.png">
+    <style>
+        .box img{
+            width: 80%; /* takes the 100 % width of its container (.box div)*/
+            height: 80%; /* takes the 100 % height of its container (.box div)*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/img/n.png" alt="NIRMODEL logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li>nuestros productos</li>
+            <li>sobre nosotros</li>
+            <li><a href="#contact">Comuniquemonos</a></li>
+            <li><a href="#booking">Reserva</a></li>
+        </ul>
+    </nav>
+
+    <h2>Nirmodel Pub Restaurant</h2>
+    <h2>Destacados de la semana</h2>
+
+    <div class="box">
+        <img  src="assets/img/bebidas.jpg" alt="GASEOSAS">
+
+        <h4>GASEOSAS</h4>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam?</p>
+    </div>
+    
+    <div class="box">
+        <img  src="assets/img/tablas.jpg" alt="TABLAS">
+
+        <h4>TABLAS</h4>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam?</p>
+    </div>
+    
+    <div class="box">
+        <img  src="assets/img/shop.jpeg" alt="SHOP CERVEZA">
+
+        <h4>SHOP CERVEZA</h4>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam?</p>    
+    </div>
+
+    <!-- m2_s2_drilling: formulario -->
+    <h2 id="contact">Comuniquémonos</h2>
+    <form action="" >
+        <label for="name">Nombre *</label>
+        <input type="text" name="name" placeholder="María Vargas" required><br><br>
+
+        <label for="email">Correo *</label>
+        <input type="email" name="email" placeholder="mariavargas@correo.com" required><br><br>
+
+        <label for="phonenumber">Teléfono</label>
+        <input type="text" name="phonenumber" maxlength="9" placeholder="951236874" pattern="[0-9]{9}" required><br><br>
+
+        <label for="reason">Motivo</label>
+        <input type="text" name="reason"><br><br>
+
+        <textarea name="reason" id="reason" cols="30" rows="10"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2 id="booking">Reserva</h2>
+    <p><strong><i>NOTA: TODOS los campos son requeridos</i></strong></p>
+    <form action="" >
+        <label for="name">Nombre</label>
+        <input type="text" name="name" placeholder="xxx xxxxx" required><br><br>
+
+        <label for="email">Correo</label>
+        <input type="email" name="email" placeholder="xxx@xxx.xx" required><br><br>
+
+        <label for="phonenumber">Teléfono</label>
+        <input type="text" name="phonenumber" maxlength="9" placeholder="xxxxxxxxx" pattern="[0-9]{9}" required><br><br>
+
+        <label for="bookingdate">Fecha</label>
+        <input type="date" name="bookingdate" required><br><br>
+        
+        <label for="bookingtime">Hora</label>
+        <input type="time" name="bookingtime" required><br><br>
+        
+        <label for="customers">Cantidad de Asistentes</label>
+        <input type="number" name="customers" id="customers" min="1" max="10" required><br><br>
+
+        <input type="submit" value="Reservar">
+    </form>
+
+    <footer>
+        <p>Todos los derechos reservados <i class='far fa-registered'></i></p>
+    </footer>
+</body>
+</html>

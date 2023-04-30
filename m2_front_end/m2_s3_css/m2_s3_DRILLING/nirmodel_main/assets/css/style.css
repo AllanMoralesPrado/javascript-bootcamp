@@ -1,0 +1,135 @@
+.box img {
+    width: 80%;
+    /* takes the 100 % width of its container (.box div)*/
+    height: 80%;
+    /* takes the 100 % height of its container (.box div)*/
+}
+
+img#nirmodel-logo {
+    height: 85px;
+}
+
+header {
+    background-image: url(../img/fondo.jpg);
+    background-size: 475px;
+}
+
+ul#menu {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul#menu li,
+ul#menu li>a {
+    color: rgb(69, 70, 72);
+    text-decoration: none;
+}
+
+ul#menu li {
+    margin-right: 50px;
+}
+
+h1#nombre-empresa {
+    color: rgb(127, 122, 129);
+    text-align: center;
+    font-size: 80px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+div.h2 {
+    text-align: center;
+}
+
+h2#highlights {
+    display: inline;
+    font-size: 1.25em;
+    border-style: solid none none none;
+}
+
+div#highlights-items {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+
+div.box img {
+    height: 175px;
+    width: 265px;
+}
+
+div.box>h4,
+div.box>p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    text-align: center;
+    width: 265px;
+}
+
+div.contact-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+div.submit-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: .25em;
+}
+
+h3.contact {
+    text-align: center;
+    margin-top: 0em;
+    margin-bottom: .25em;
+}
+
+form.form-content {
+    color: white;
+    background-color: rgb(57, 57, 57);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: .25em;
+    border-radius: .5em;
+}
+
+div.form-input {
+    text-align: center;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: black;
+    position: relative;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cropped-image {
+    width: 770px;
+    height: 290px;
+}
+
+.none-image {
+    object-fit: none;
+}
+
+.position-70-15 {
+    object-position: 87.5% 0%;
+}
+
+.cabecera{
+    background-image: url(../img/fondo.jpg);
+    background-size: 475px;
+}

@@ -1,0 +1,35 @@
+#infoBox,
+#formBox {
+  background: #FFFFFF;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  padding-bottom: 2rem;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+form button{
+  border-radius: 0 !important;
+  background-color: #2aa1bf !important;
+  height: 45px !important;
+  color: #84e2f9 !important;
+}
+
+.form-control{
+  height: 45px !important;
+  border-radius: 0 !important;
+  background-color: #f2f2f2 !important;
+}
+
+body {
+  background: #337ff1;
+  background: -webkit-linear-gradient(right, #63a2da, #1c5eb6);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

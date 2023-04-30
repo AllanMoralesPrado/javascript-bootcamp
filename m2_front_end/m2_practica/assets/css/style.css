@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Dropy';
+    src: url('fonts/dropy/Dropy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PixelDigivolve-mOm9';
+    src: url('fonts/pixel-digivolve-font/PixelDigivolve-mOm9.ttf') format('truetype');
+}
+
+body{
+    font-family: 'Dropy', var(--bs-body-font-family);
+    background-image: url(../img/bg.jpg);
+}
+
+#staticBackdrop{
+    font-family: var(--bs-body-font-family);
+}
+
+h5{
+    font-family: 'PixelDigivolve-mOm9';
+}
+
+#header-bg{
+    background-image: url(../img/header-bg.png);
+}
+
+.navbar{
+    background-color: orange;
+}
+
+.card{
+    background-color: #c4bfff;
+}
+
+#digimon-description,
+#digimon-picture
+{
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media (max-width:575px){
+    h5{
+        font-size: 5vw;
+    }
+}

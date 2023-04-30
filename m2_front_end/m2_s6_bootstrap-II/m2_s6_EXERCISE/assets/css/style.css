@@ -1,0 +1,17 @@
+.contenedor {
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+    background-color: rgb(139, 139, 249);
+    opacity: 0.7;
+    padding: 4%;
+    color: black;
+    border-radius: 2%;
+}
+
+.jumbotron {
+    margin-top: 4%;
+    padding: 5%;
+    background-color: #007bff;
+    color: #ffffff;
+}

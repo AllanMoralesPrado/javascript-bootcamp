@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.css">
+    <title>NIRMODEL Restaurant y Pub</title>
+    <!--Inserción del favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/n.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="col-sm-12">
+        <img id="nirmodel-logo" src="assets/img/n.png" alt="NIRMODEL logo">
+        <nav>
+            <ul id="menu">
+                <li>nuestros productos</li>
+                <li>sobre nosotros</li>
+                <li><a href="#contact">Comuniquemonos</a></li>
+                <li><a href="#booking">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="nombre-empresa">Nirmodel Pub Restaurant</h1>
+
+    <div class="h2">
+        <h2 id="highlights">Destacados de la semana</h2>
+    </div>
+
+    <div id="highlights-items">
+        <div class="box">
+            <img src="assets/img/bebidas.jpg" alt="GASEOSAS"  height="height: 175px">
+
+            <h4>GASEOSAS</h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam?</p>
+        </div>
+
+        <div class="box">
+            <img src="assets/img/tablas.jpg" alt="TABLAS" height="height: 175px">
+
+            <h4>TABLAS</h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam?</p>
+        </div>
+
+        <div class="box">
+            <img src="assets/img/shop.jpeg" alt="SHOP CERVEZA" height="height: 175px">
+
+            <h4>SHOP CERVEZA</h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam?</p>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <!-- m2_s2_drilling: formulario -->
+        <form class="form-content" action="">
+            <h3 class="contact">Comuniquémonos</h3>
+
+            <label for="name">Nombre *</label>
+            <input type="text" name="name" placeholder="María Vargas" required><br><br>
+
+            <label for="email">Correo *</label>
+            <input type="email" name="email" placeholder="mariavargas@correo.com" required><br><br>
+
+            <label for="phonenumber">Teléfono</label>
+            <input type="text" name="phonenumber" maxlength="9" placeholder="951236874" pattern="[0-9]{9}"
+                required><br><br>
+
+            <label for="reason">Motivo</label>
+            <input type="text" name="reason"><br><br>
+
+            <textarea name="reason" id="reason" cols="30" rows="10"></textarea><br><br>
+
+            <div class="submit-btn">
+                <input type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+
+    <div class="contact-form">
+
+        <form id="booking" class="form-content" action="">
+            <h3 class="contact">Reserva</h3>
+            <p><strong><i>NOTA: TODOS los campos son requeridos</i></strong></p>
+            <div class="form-input">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" placeholder="xxx xxxxx" required><br><br>
+            </div>
+
+            <div class="form-input">
+                <label for="email">Correo</label>
+                <input type="email" name="email" placeholder="xxx@xxx.xx" required><br><br>
+            </div>
+
+            <div class="form-input">
+                <label for="phonenumber">Teléfono</label>
+                <input type="text" name="phonenumber" maxlength="9" placeholder="xxxxxxxxx" pattern="[0-9]{9}"
+                    required><br><br>
+            </div>
+
+            <div class="form-input">
+                <label for="bookingdate">Fecha</label>
+                <input type="date" name="bookingdate" required><br><br>
+            </div>
+
+            <div class="form-input">
+                <label for="bookingtime">Hora</label>
+                <input type="time" name="bookingtime" required><br><br>
+            </div>
+
+            <div class="form-input">
+                <label for="customers">Cantidad de Asistentes</label>
+                <input type="number" name="customers" id="customers" min="1" max="10" required><br><br>
+            </div>
+
+            <div class="submit-btn">
+                <input type="submit" value="Reservar">
+            </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <img class="cropped-image none-image position-70-15 col-md-12" src="assets/img/fondo.jpg" alt="">
+        <p>Todos los derechos reservados <i class='far fa-registered'></i></p>
+    </footer>
+</body>
+
+</html>
