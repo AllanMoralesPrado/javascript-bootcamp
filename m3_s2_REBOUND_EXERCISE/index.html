@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>m3s2 REBOUND</title>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" class="calculator-screen" id="screen">
+    <div class="calculator-keys">
+      <button class="operator-keys" id="+" onclick="getValue('+')">+</button>
+      <button class="operator-keys" id="-" onclick="getValue('-')">-</button>
+      <button class="operator-keys" id="*" onclick="getValue('*')">*</button>
+      <button class="operator-keys" id="/" onclick="getValue('/')">/</button>
+      <button id="7" onclick="getValue('7')">7</button>
+      <button id="8" onclick="getValue('8')">8</button>
+      <button id="9" onclick="getValue('9')">9</button>
+      <button id="4" onclick="getValue('4')">4</button>
+      <button id="5" onclick="getValue('5')">5</button>
+      <button id="6" onclick="getValue('6')">6</button>
+      <button id="1" onclick="getValue('1')">1</button>
+      <button id="2" onclick="getValue('2')">2</button>
+      <button id="3" onclick="getValue('3')">3</button>
+      <button onclick="getZero()">0</button>
+      <button onclick="addDecimal()">.</button>
+      <button class="clear-key" onclick="clearScreen()">AC</button>
+      <button class="equal-sign" onclick="solve()">=</button>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
+
