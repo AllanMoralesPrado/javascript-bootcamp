@@ -1,0 +1,65 @@
+.col-12,
+.col-sm-6,
+.col-md-4,
+.col-lg-3{
+  background-color: #f0f0f0;
+}
+
+.my-shape{
+  /* Definir forma geométrica*/
+  /* Mantener razón 2:1 entre width y heigth para no deformar la figura */
+  height: 140px;
+  background-color: #2ecb70;
+  /* Coordenadas de los vértices en sentido horario desde la esquina superior izquierda 
+      A-----------------B
+      -                 -
+      -                 -
+      -                 -
+      G--F   D----------C
+          \ /
+           E
+  */
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 40% 85%, 30% 100%, 20% 85%, 0 85%);
+  /* Definir posicionamiento y tamaño del texto*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.5rem;
+  color: #f0c30e;
+}
+
+.my-shape p:first-child {
+  font-size: 64px;
+  font-weight: bolder;
+}
+
+.my-shape p:last-child {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#agree{
+  margin-top: -1.5rem;
+}
+
+#agree .form-check a{
+  text-decoration: none;
+  color: #dfce7e;
+  font-weight: 500;
+}
+
+#descuento{
+  background-color: #2c3d4f;
+  color: #41918a;
+  font-weight: 700;
+}
+
+#descuento>p:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#codigo{
+  color: #f5ff49;
+}
