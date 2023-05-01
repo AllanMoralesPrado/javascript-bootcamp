@@ -1,0 +1,21 @@
+html,
+body{
+  background-color: #f9f9f9;
+}
+
+.form-select{
+  width: 8rem  !important;
+}
+
+img{
+  border-radius: 8px;
+}
+
+#description{
+  border: 1px solid #c3c3c3;
+  border-radius: 8px;
+}
+
+#book{
+  background-color: #f9f9fb;
+}
