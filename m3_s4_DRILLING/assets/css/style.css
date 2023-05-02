@@ -1,0 +1,35 @@
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#card-form{
+  border-radius: 10px!important;
+}
+
+.card{
+  padding-top: 3.5rem;
+  /* --bs-card-spacer-y: 2rem; */
+  --bs-card-spacer-x: 1.2rem;
+}
+
+.card>p{
+  color: #5b5b5b;
+  font-weight: 500;
+}
+
+#acuerdo{
+  color: #1663d0;
+  text-decoration: underline;
+}
+
+#acuerdo:hover{
+  cursor: pointer;
+  color: red;
+}
+
+button.btn.btn-primary{
+  width: 100%;
+}
