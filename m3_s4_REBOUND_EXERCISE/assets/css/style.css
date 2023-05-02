@@ -1,0 +1,59 @@
+html,
+body{
+  background-color: #eeeeee;
+}
+
+a.navbar-brand{
+  font-weight: 500;
+}
+
+#aviso-escala{
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+select,
+#origen,
+#destino{
+  width: 170px !important;
+}
+
+select, label{
+  font-weight: 500 !important;
+}
+
+#h1-where, h5{
+  font-weight:400;
+}
+
+#itinerario{
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+#h1-itinerario{
+  font-weight: 600;
+}
+
+.itinerario-fecha{
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+#if-origen{
+  background-color: #c0def7;
+  color: #4263c6;
+}
+
+#if-destino{
+  background-color: #cfebe5;
+  color: #5f8e7c;
+}
+
+.itinerario-lugar{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
