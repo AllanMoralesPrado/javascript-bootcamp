@@ -1,0 +1,13 @@
+html,
+body{
+  background: linear-gradient(to right, #0085b2, #5bc1d8);
+}
+
+.board{
+  background-color: #ffffff;
+}
+
+.center-screen{
+  align-items: center;
+  min-height: 100vh;
+}
