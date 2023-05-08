@@ -1,0 +1,21 @@
+html,
+body{
+  background-color: #eeeeee;
+}
+
+#ficha{
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow:
+             0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+button{
+  font-size: small !important;
+}
+
+#ImagenProd{
+  height: 60vh;
+}
