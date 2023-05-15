@@ -44,6 +44,8 @@ const balance = {
   }
 }
 
+let num_gastos = 0;
+
 function crearClave(){
   let cadena = "";
   let random = Math.floor(Math.random() * 5) + 6;
@@ -57,20 +59,69 @@ function cargarBalance(balance){
   monitor.presupuesto.innerHTML = `$ ${balance.presupuesto}`;
   monitor.gastos.innerHTML = `$ ${balance.gastos}`;
   monitor.saldo.innerHTML = `$ ${balance.saldo}`;
+  //Crear Aviso de insuficiente presupuesto
+  const advertencia = document.getElementById('advertencia');
+  if(balance.saldo < 0 && !(advertencia)){
+    const monitor_ = document.getElementById('monitor');
+    monitor.saldo.style.color = 'red';
+    const advertencia = document.createElement('div');
+    advertencia.id = 'advertencia';
+    advertencia.classList.add('row','text-center','justify-content-center');
+    const mensaje = document.createElement('div');
+    mensaje.classList.add('col-10','bg-warning', 'rounded-3', 'py-2');
+    mensaje.innerHTML = 'ADVERTENCIA: El gasto excede el presupuesto.';
+    advertencia.appendChild(mensaje);
+    monitor_.appendChild(advertencia);
+  }else{
+    if (!(balance.saldo < 0) && advertencia){
+      monitor.saldo.style.color = '#212529';
+      advertencia.remove();
+    }
+  }
+}
+
+function inputError(input, movimiento){ 
+  const aviso = document.createElement('span');
+  aviso.id = movimiento + 'Error';
+  aviso.classList.add('bg-warning','rounded-3','p-1', 'fw-semibold');
+  aviso.innerHTML = 'Ingrese un valor válido';
+  input.parentNode.insertBefore(aviso,input);
 }
 
 presupuestoBoton.addEventListener('click', () => {
   let valorPresupuesto = parseInt(presupuestoForm.monto.value);
-  balance.presupuesto = valorPresupuesto;
-  cargarBalance(balance);
+  const error = document.getElementById('presupuestoError');
+  if(isNaN(valorPresupuesto) || (valorPresupuesto == null)){
+    if(!error){
+      inputError(presupuestoForm.monto, 'presupuesto');
+    }
+  }
+  else{
+    balance.presupuesto = valorPresupuesto;
+    cargarBalance(balance);
+    if(error){
+      error.remove();
+    }
+  }
 })
 
 gastoForm.boton.addEventListener('click', () => {
   let nombreGasto = gastoForm.nombre.value;
   let valorGasto = parseInt(gastoForm.monto.value);
-  balance.sumarGastos = valorGasto;
-  cargarBalance(balance);
-  registrarGasto(nombreGasto, valorGasto);
+  const error = document.getElementById('gastoError');
+  if(isNaN(valorGasto) || (valorGasto == null)){
+    if(!error){
+      inputError(gastoForm.monto, 'gasto');
+    }
+  }
+  else{
+    balance.sumarGastos = valorGasto;
+    cargarBalance(balance);
+    registrarGasto(nombreGasto, valorGasto);
+    if(error){
+      error.remove();
+    }
+  } 
 })
 
 function registrarGasto(nombreGasto, valorGasto){
@@ -90,10 +141,14 @@ function registrarGasto(nombreGasto, valorGasto){
 </div>`;
   listaGastos.append(nuevoRegistro);
   habilitarBorrado(claveRegistro);
+  if(num_gastos++ > 5 && !(listaGastos.classList.contains('overflow-y-scroll'))){
+    listaGastos.classList.add('overflow-y-scroll');
+  }
 }
 
 function habilitarBorrado(claveRegistro){
-  //Obtener valor del gasto
+  const listaGastos = document.getElementById('gastosScroll');
+  //Obtener valor del gasto - El SPLIT GENERA UN ARREGLO
   const valorGasto = parseInt(document.getElementById(claveRegistro + '-valor').innerHTML.split('$ ')[1]);
   //Obtener Boton
   const boton = document.getElementById(claveRegistro + '-borrar');
@@ -103,5 +158,8 @@ function habilitarBorrado(claveRegistro){
     cargarBalance(balance);
     const registroGasto = document.getElementById(claveRegistro);
     registroGasto.remove();
+    if(num_gastos-- <= 6 && listaGastos.classList.contains('overflow-y-scroll')){
+      listaGastos.classList.remove('overflow-y-scroll');
+    }
   })
 }
