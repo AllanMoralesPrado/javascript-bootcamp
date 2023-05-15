@@ -1,0 +1,22 @@
+#presupuestoForm{
+  background-color: #ebffeb;
+  border-radius: 7px;
+  border-color: #007600;
+  border-style: solid;
+}
+
+#gastoForm{
+  background-color: #ffd6d6;
+  border-radius: 7px;
+  border-color: #8f0000;
+  border-style: solid;
+}
+
+input{
+  background-color: #fff0!important;
+  border-color: #bdc5cd!important;
+}
+
+.delete-button:hover{
+  cursor: pointer;
+}
