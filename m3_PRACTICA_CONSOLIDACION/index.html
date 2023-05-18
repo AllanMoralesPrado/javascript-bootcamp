@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Presupuesto App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/2c42bb3bea.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container-xl">
+      <div class="row">
+        <h3 class="p-3">PRESUPUESTO APP</h3>
+      </div>
+      <div class="row text-center mb-4">
+        <div class="col-6 text-start p-3 " id="presupuestoForm">
+          <div class="mb-3">
+            <label for="presupuestoInput" class="form-label fw-semibold">Ingresa Tu Presupuesto</label>
+            <input type="number" class="form-control" name="presupuestoInput" id="presupuestoInput" min="0">
+          </div>
+          <button class="btn btn-outline-success" type="button" id="presupuestoBoton">Calcular</button>
+        </div>
+        <div class="col-6 p-3 fw-semibold" id="monitor">
+          <div class="row text-center">
+            <div class="col-4">
+              <p class="mb-0">PRESUPUESTO</p>
+              <p class="fs-4" id="presupuesto">$ 0</p>
+            </div>
+            <div class="col-4">
+              <p class="mb-0">GASTOS</p>
+              <p class="fs-4" id="gastos">$ 0</p>
+            </div>
+            <div class="col-4">
+              <p class="mb-0">SALDO</p>
+              <p class="fs-4" id="saldo">$ 0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-6 text-start p-3" id="gastoForm">
+          <div class="mb-3">
+            <label for="gastoNombreInput" class="form-label fw-semibold">Ingresa El Nombre Del Gasto</label>
+            <input type="text" class="form-control" name="gastoNombreInput" id="gastoNombreInput" >
+          </div>
+          <div class="mb-3">
+            <label for="gastoMontoInput" class="form-label fw-semibold">Ingresa La Cantidad Del Gasto</label>
+          <input type="number" class="form-control" name="gastoMontoInput" id="gastoMontoInput" min="0">
+          </div>
+          <button class="btn btn-outline-danger" type="button" id="gastoBoton">Añadir Gasto</button>
+        </div>
+        <div class="col-6 text-start p-3" id="listaGastos">
+          <div class="row fw-semibold">
+            <div class="col-6">
+              GASTO
+            </div>
+            <div class="col-4">
+              VALOR
+            </div>
+          </div>
+          <hr style="margin-top:0;">
+          <div id="gastosScroll" style="max-height: 10rem;">
+            <!--DOM-->
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
