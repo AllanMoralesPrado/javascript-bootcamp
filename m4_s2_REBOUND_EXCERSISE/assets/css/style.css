@@ -1,0 +1,71 @@
+body{
+  background-color: rgba(0, 0, 0, 0.959);
+}
+
+.concert-bg{
+  height: 625px;
+  width: 500px;
+  background-image: url("../../assets/img/conciertos.png");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7); /* Color negro semitransparente */
+  background-blend-mode: multiply; /* Mezcla de multiplicación para oscurecer */
+  color: white;
+}
+
+.py-65{
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
+}
+
+.px-52{
+  padding-left: 5.2rem;
+  padding-right: 5.2rem;
+}
+
+input {
+  border-radius: 1.1rem !important;
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Fondo con opacidad del 30% */
+  border: none !important;
+  color: white !important;
+}
+
+label{
+  opacity: 0.7 !important;
+}
+
+button{
+  border-radius: 1.1rem !important;
+}
+
+::placeholder {
+  color: white !important;
+  opacity: 0.5 !important; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: white !important;
+ opacity: 0.5 !important; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: white !important;
+ opacity: 0.5 !important; /* Firefox */
+}
+
+.fancy-link-primary{
+  background-image: linear-gradient(#0d6efd, #0d6efd);
+  background-size: 100% 4px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.fancy-link-warning{
+  background-image: linear-gradient(#ffc107, #ffc107);
+  background-size: 100% 4px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+#exampleModal{
+  color: black;
+}
