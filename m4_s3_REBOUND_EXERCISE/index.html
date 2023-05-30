@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BUONA PIZZA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
+  </head>
+  <body>
+    <div class="container center-container bg-white">
+      <form action="">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h5 class="br-5 py-2 ps-3" style="background-color: #f8f9fb;">MEJORA TU PIZZA</h5>
+            <!-- CHECHKBOXES -->
+            <div id="ingredientesCheckbox" class="mb-3 px-2">
+              <p>Puede elegir 3 ingredientes gratis. Cada ingrediente adicional cuesta $800 pesos cada uno.</p>
+              <p>Ingredientes disponibles para agregar a su pizza: </p>
+              <!-- DOM -->
+            </div>
+            <!-- FIN CHECHKBOXES -->
+            <!-- SELECCIONADOS -->
+            <div class="px-2" id="ingredientesPedido">
+              Los ingredientes seleccionados son: 
+              <p id="listaSeleccionados">
+                <!-- DOM -->
+              </p>
+              Los ingredientes <b>extras</b> seleccionados son:
+              <p id="listaExtras">
+                <!-- DOM -->
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h5 class="br-5 py-2 ps-3" style="background-color: #f8f9fb;">RESUMEN DEL PEDIDO</h5>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row" colspan="2" class="text-grey">Pizza XL</th>
+                  <td class="text-end fw-bold" id="precioPizzaXL"><!--DOM--></td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="2" class="text-grey">Ingredientes Extras</th>
+                  <td class="text-end fw-bold" id="precioExtras"><!--DOM--></td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="2" class="text-grey">Propina</th>
+                  <td class="text-end fw-bold" id="monitorPropina"><!--DOM--></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="col d-flex text-center br-5 br-style p-1 ps-3 justify-content-between">
+              <input id="inputPropina" type="number" min="1000" step="1000" class="d-inline br-none w-50" placeholder="Ingresa Propina" style="outline: none; background-color:transparent">
+              <button class="btn btn-dark br-5 d-inline align-middle" id="botonPropina">Enviar Pedido con Propina</button>
+            </div>           
+          </div>
+        </div>
+      </form> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

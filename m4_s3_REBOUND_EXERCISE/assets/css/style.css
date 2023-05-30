@@ -1,0 +1,41 @@
+html,
+body{
+  background: linear-gradient(to right, rgb(0, 146, 70) 0%, rgb(206, 43, 55) 100%);
+}
+
+.center-container {
+  height: 100%; /* Ajusta la altura según tus necesidades */
+  width: 90vw;
+  margin-top: 5vh; /* Ajusta el valor según tus necesidades */
+  margin-bottom: 5vh;
+  --bs-gutter-x: 6rem;
+  --bs-gutter-y: 3rem;
+  padding-top: calc(var(--bs-gutter-y) * .5);
+  padding-bottom: calc(var(--bs-gutter-y) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  text-align: start;
+}
+
+.text-grey{
+  color: grey;
+}
+
+.br-5{
+  border-radius: 5rem;
+}
+
+.br-none{
+  border: none;
+}
+
+.br-style{
+  border-style: solid;
+  border-width: 3px;
+  border-color: grey;
+}
+
+#listaSeleccionados,
+#listaExtras{
+  overflow-wrap: break-word;
+}
