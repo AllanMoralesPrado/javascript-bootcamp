@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimplyMail</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/favicon/mail-32x32.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon/mail-512x512.png" type="image/png" sizes="any">
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <label for="mailDestinatario">PARA:</label>
+      <input type="email" id="mailDestinatario" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="email destinatario" required><br>
+      <input type="text" id="mailTitulo" placeholder="TÍTULO"><br>
+      <input type="text" id="mailMensaje" placeholder="Mensaje"><br>
+      <label for="mailRemitente">DE:</label>
+      <input type="email" id="mailRemitente" placeholder="email remitente" required><br>
+      <span>CC:</span><br>
+      <input type="email" class="mailCarbonCopy" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="emails">
+      <input type="email" class="mailCarbonCopy" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="emails">
+      <input type="email" class="mailCarbonCopy" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="emails">
+      <input type="email" class="mailCarbonCopy" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="emails">
+      <input type="email" class="mailCarbonCopy" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="emails">
+      <input type="email" class="mailCarbonCopy" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="emails"><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
