@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Share+Tech&display=swap');
+
+/* ADAPTADO DE: https://mdbootstrap.com/docs/standard/extended/timeline/*/
+
+.main-timeline-5 {
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.main-timeline-5::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #ebebeb;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  margin-left: -3px;
+}
+
+.timeline-5 {
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+}
+
+.index
+{
+  position: absolute;
+  left: -65px; /* Ajusta la posición a la izquierda del círculo */
+  color: #fff; /* Color del texto */
+  font-size: 14px; /* Tamaño del texto */
+  font-weight: bold; /* Peso de la fuente del texto */
+  text-align: right; /* Alineación del texto */
+  width: 50px; /* Ancho del área de texto */
+}
+
+#indexOne{
+  top: 13.5%;
+}
+
+#indexTwo{
+  top: 30%;
+}
+
+#indexThree{
+  bottom: 35.5%;
+}
+
+.index:hover{
+  cursor: pointer;
+}
+
+.index::after
+{
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 55px;
+  background-color: #f1c40f;
+  top: 17%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.right-5 {
+  padding: 0px 0px 20px 40px;
+  left: auto;
+}
+
+@media (max-width: 991px) {
+  .main-timeline-5 {
+    max-width: 90%;
+  }
+}
+.gradient-custom-5 {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+}
+
+.timeline-circle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  left: 18px; /* Ajusta la posición a la izquierda del card-body */
+  top: 32px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.principal{
+  background-color: #fa8072;
+}
+
+.secundario{
+  background-color: #90ee90;
+}
+
+.agregado{
+  background-color: #87cefa;
+}
+
+h1
+{
+  font-family: 'Anton', sans-serif;
+  color: dimgrey;
+}
+
+h5
+{
+  font-family:'Share Tech', sans-serif;
+  font-weight: 600;
+  font-size: 1em
+}
+
+p
+{
+  font-family:'Share Tech', sans-serif;
+  font-size: 0.8em;
+}
+
+.row-cols-3 > .col-4 {
+  width: calc(33.33% - 20px); /* Ancho fijo para las tarjetas con un margen de 20px */
+  margin-bottom: 20px; /* Margen inferior entre las columnas */
+}
+
+.card{
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: transform 0.3s ease 0s;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  cursor: default;
+}
