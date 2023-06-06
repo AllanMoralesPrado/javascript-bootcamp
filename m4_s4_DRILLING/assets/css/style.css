@@ -1,0 +1,18 @@
+.container ul
+{
+  position: relative;
+  top: 30px;
+}
+
+li,
+li input[type="text"]
+{
+  font-weight: 500;
+}
+
+input.form-control,
+.input-group-text
+{
+  border: none;
+  background-color: #fff;
+}
