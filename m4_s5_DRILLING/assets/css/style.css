@@ -1,0 +1,53 @@
+html,
+body
+{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #000;
+  color: #ea5967;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+div.header h1
+{
+  background-color: #2f2f2f;
+  margin-block-start: 0;
+  padding-block-start: 5px;
+}
+
+div.section
+{
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div.field
+{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width:450px;
+  margin-bottom: 15px;
+  border: 2.5px solid #ea5967;
+  padding: 10px;
+}
+
+label
+{
+  width: 120px;
+  text-align: start;
+  font-size: small;
+}
+
+input
+{
+  background-color: transparent;
+  box-shadow: none;
+  outline: 0;
+  border: none;
+  color: #8e8e8e
+}
+
