@@ -1,0 +1,55 @@
+.interface{
+  box-shadow: 
+    inset 0 -3em 3em rgb(0 0 0 / 0%),
+    0em 0em .5em rgb(0 0 0 / 30%);
+}
+
+.br-8{
+  border-radius: 8px;
+}
+
+.brs-8{
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.bg-gray{
+  background-color: #dddddd;
+}
+
+
+/* Lista de productos */
+
+.imagen-producto{
+  width: 70px;
+}
+
+.nombre-producto,
+.atributos-producto{
+  margin-bottom: 0;
+}
+
+.nombre-producto{
+  color: #788187;
+}
+
+.quantity{ /* Monitorea la cantidad de un producto */
+  height: 1em;
+  /* width: 2em; */
+  border: 1px solid #dddddd;
+}
+
+.control-quantity{
+  font-size: larger;
+}
+
+.control-quantity:hover{ /* Aumento o decremento de la cantidad que el cliente llevará de un producto */
+  color: blue;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-control,
+.form-select{
+  border-radius: 0%;
+}
