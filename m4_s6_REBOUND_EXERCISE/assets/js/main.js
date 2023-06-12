@@ -5,12 +5,10 @@ const delay = [0, 6, 5, 0, 7, 12, 13];
 window.addEventListener("load", (event) => {
   // Hora de Santiago
   let desfase = new Date();
-  desfase.setHours(delay[0]);
   dom[0].innerHTML = desfase.toLocaleTimeString("es-CL");
 
   setInterval(() => {
     let desfase = new Date();
-    desfase.setHours(delay[0]);
     dom[0].innerHTML = desfase.toLocaleTimeString("es-CL");
   },1000);
 
@@ -18,7 +16,7 @@ window.addEventListener("load", (event) => {
     setTimeout(() => {
       setInterval(() => {
         let desfase = new Date();
-        desfase.setHours(delay[i]);
+        desfase.setHours(desfase.getHours() + delay[i]);
         dom[i].innerHTML = desfase.toLocaleTimeString("es-CL");
       },1000);
     },timer);
