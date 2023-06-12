@@ -1,0 +1,22 @@
+html,
+body
+{
+    background-color: #b2b2b2;
+    color: #fff;
+}
+
+#timer
+{
+    min-height: 50vh;
+}
+
+#timer p
+{
+    line-height: 1.2;
+}
+
+#counter
+{
+    font-size: 180px;
+    font-weight: 600;
+}
