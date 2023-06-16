@@ -1,0 +1,61 @@
+html,
+body
+{
+    background: linear-gradient(#02c4fa, #035cea);
+    min-height: 100vh;
+    color: #fff;
+}
+
+form
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+form input.form-control
+{
+    width: 75%;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+}
+
+form input.form-control::placeholder
+{
+    color: #fff;
+}
+
+form button.btn.btn-light
+{
+    width: 20%;
+    border-radius: 30px;
+
+}
+
+#resultados
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fs-7
+{
+    font-size: 11px;
+}
+
+.ls-4
+{
+    letter-spacing: 4px;
+}
+
+.lh-0
+{
+    line-height: 0;
+}
+
+.lh-normal
+{
+    line-height: 1;
+}
