@@ -1,0 +1,26 @@
+{
+  "name": "m6_s2_drilling",
+  "version": "1.0.0",
+  "description": "- Crea una nueva carpeta, e inicializa un nuevo repositorio de git.  \r - Crea un archivo `.gitignore`, que omita la carpeta `node modules` al momento de subir cambios.  \r - Busca en la web los paquetes más utilizados de npm, e instala los cinco primeros de la lista.  \r - Haz un chequeo de los cambios en tu proyecto (git status) posterior a la instalación, agrega los cambios a git, y luego realiza un commit de estos cambios.  \r - Elige dos paquetes de tu proyecto, y realiza una desinstalación.  \r - Vuelve a realizar un chequeo de los cambios luego de la  desinstalación, añade los cambios, y guárdalos en el repositorio local de git.  \r - ¿Puedes ver cuál es el archivo que cambia cada vez que realizas una instalación o desinstalación de paquetes?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "git",
+    "npm",
+    "package"
+  ],
+  "author": "Allan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "react": "^18.2.0"
+  }
+}
