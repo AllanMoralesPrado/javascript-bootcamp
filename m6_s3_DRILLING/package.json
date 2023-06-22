@@ -1,0 +1,22 @@
+{
+  "name": "m6_s3_drilling",
+  "version": "1.0.0",
+  "description": "m6 s3 drilling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "es6",
+    "moment",
+    "lodash",
+    "destructuring",
+    "object"
+  ],
+  "author": "Allan",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4"
+  }
+}
