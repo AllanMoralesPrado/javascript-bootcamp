@@ -333,7 +333,7 @@ Los archivos `package.json` y `package-lock.json` experimentan cambios cuando un
 
 ### SOLUCIÓN - PARTE 2
 
-1. Instalación del paquete `loadsh` versión *4.7.21*:
+1. Instalación del paquete `lodash` versión *4.7.21*:
 ```
 npm i lodash@4.17.21
 ```
