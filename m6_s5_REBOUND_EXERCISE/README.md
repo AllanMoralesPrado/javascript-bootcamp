@@ -82,14 +82,14 @@ graph TD
 
 #### 3. Lectura de datos
 ```mermaid
-graph TD
+graph LR
     A[Inicio] --> B[Leer archivo de texto JSON]
     B --> C[Parsear datos JSON]
-    C -- ¿Se proporcionó un nombre de automóvil? --> D[Devolver información de todos los autos registrados]
+    C -- Se proporcionó un nombre de automóvil? --> D[Devolver información de todos los autos registrados]
     D --> E[Fin]
-    C -- ¿El nombre de automóvil existe en los datos? --> F[Devolver características del automóvil específico]
+    C -- El nombre de automóvil existe en los datos? --> F[Devolver características del automóvil específico]
     F --> E[Fin]
-    C -- El nombre de automóvil no existe --> G[Devolver "Auto no registrado"]
+    C -- El nombre de automóvil no existe --> G[Devolver 'Auto no registrado']
     G --> E[Fin]
     B -- Error al leer el archivo --> H[Lanzar error y mostrar mensaje de error]
     H --> E[Fin]
@@ -100,10 +100,10 @@ graph TD
 graph TD
     A[Inicio] --> B[Leer archivo de texto JSON]
     B --> C[Parsear datos JSON]
-    C -- ¿El nombre de automóvil existe en los datos? --> D[Modificar valor de la propiedad]
+    C -- El nombre de automóvil existe en los datos? --> D[Modificar valor de la propiedad]
     D --> E[Guardar cambios en el archivo]
-    E --> F[Devolver "Datos actualizados con éxito"]
-    C -- El nombre de automóvil no existe --> G[Devolver "Auto no registrado"]
+    E --> F[Devolver 'Datos actualizados con éxito']
+    C -- El nombre de automóvil no existe --> G[Devolver 'Auto no registrado']
     G --> F[Fin]
     B -- Error al leer o escribir en el archivo --> H[Lanzar error y mostrar mensaje de error]
     H --> F[Fin]
