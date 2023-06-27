@@ -47,7 +47,7 @@ En resumen, tu programa podrá ser ejecutado de las siguientes tres formas:
 #### 1. Validar cantidad de argumentos ingresados en CLI
 
 ```mermaid
-graph LR
+graph TD
     A[Inicio] --> B[Validar cantidad de argumentos]
     B -- Argumentos válidos --> C[Llamar a menuAuto]
     C --> D[Fin]
