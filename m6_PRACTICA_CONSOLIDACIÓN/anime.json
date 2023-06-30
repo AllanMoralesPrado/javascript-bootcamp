@@ -1,0 +1,86 @@
+{
+  "1": {
+    "nombre": "Slam Dunk",
+    "genero": "shonen",
+    "año": "1990",
+    "autor": "Takehiko Inoue"
+  },
+  "2": {
+    "nombre": "Dragon Ball Super",
+    "genero": "Shonen",
+    "año": "2015",
+    "autor": "Akira Toriyama"
+  },
+  "3": {
+    "nombre": "Sailor Moon",
+    "genero": "Shojo",
+    "año": "1992",
+    "autor": "Naoko Takeuchi"
+  },
+  "4": {
+    "nombre": "Naruto",
+    "genero": "Shonen",
+    "año": "2002",
+    "autor": "Masashi Kishimoto"
+  },
+  "5": {
+    "nombre": "Neon Genesis Evangelion",
+    "genero": "Mecha",
+    "año": "1995",
+    "autor": "Yoshiyuki Sadamoto"
+  },
+  "6": {
+    "nombre": "Mi serie",
+    "genero": "Seinen",
+    "año": "2023",
+    "autor": "Yo"
+  },
+  "8": {
+    "nombre": "Mi serie",
+    "genero": "Seinen",
+    "año": "2023",
+    "autor": "Yo"
+  },
+  "9": {
+    "nombre": "Otra serie",
+    "genero": "Seinen",
+    "año": "2023",
+    "autor": "Yo"
+  },
+  "10": {
+    "nombre": "JoJo's Bizarre Adventure",
+    "genero": "shonen",
+    "año": "1987",
+    "autor": "Hirohiko Araki"
+  },
+  "11": {
+    "nombre": "JoJo's Bizarre Adventure",
+    "genero": "shonen",
+    "año": "1987",
+    "autor": "Hirohiko Araki"
+  },
+  "12": {
+    "nombre": "JoJo's Bizarre Adventure",
+    "genero": "shonen",
+    "año": "1987",
+    "autor": "Hirohiko Araki"
+  },
+  "13": {
+    "nombre": "Slam Dunk",
+    "genero": "shonen",
+    "año": "1990",
+    "autor": "Takehiko Inoue"
+  },
+  "14": {
+    "nombre": "JoJo's Bizarre Adventure",
+    "genero": "shonen",
+    "año": "1987",
+    "autor": "Hirohiko Araki"
+  },
+  "15": {
+    "nombre": "Slam Dunk",
+    "genero": "shonen",
+    "año": "1990",
+    "autor": "Takehiko Inoue"
+  }
+}
