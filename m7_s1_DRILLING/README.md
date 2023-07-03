@@ -20,8 +20,8 @@ Partiendo del ejercicio REBOUND EXERCISE - CUE 1, realice la conexión de la bas
     ```
 2. Creación de base de datos en PostgreSQL y de un usuario propietario de ésta (revisar `practica_db_ddl.sql` en **m7_s2_REBOUND_EXERCISE**)
     
-![Paso 2]()
-![Paso 2]()
+![Paso 2](https://github.com/AllanMoralesPrado/javascript-bootcamp/blob/master/m7_s1_DRILLING/creaci%C3%B3n_db.png)
+![Paso 2](https://github.com/AllanMoralesPrado/javascript-bootcamp/blob/master/m7_s1_DRILLING/creaci%C3%B3n_tablas.png)
 
 3. Instalar `dotenv` para proteger las configuraciones de la base de datos
 
