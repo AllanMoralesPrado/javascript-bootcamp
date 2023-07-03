@@ -1,0 +1,16 @@
+{
+  "name": "m7_s1_drilling",
+  "version": "1.0.0",
+  "description": "Partiendo del ejercicio REBOUND EXERCISE - CUE 1, realice la conexión de la base de datos con node.js, ejecutando los siguientes pasos: \r 1. Crear el directorio, e inicializar el proyecto con npm. \r 2. Instalación del paquete pg. \r 3. Crear una base de datos en PostgreSQL y el usuario de ésta. \r 4. Conectarse como cliente y como pool. \r 5. Conexión con un URI string.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.1"
+  }
+}
