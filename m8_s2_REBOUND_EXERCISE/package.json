@@ -1,0 +1,15 @@
+{
+  "name": "m8_s2_rebound_exercise",
+  "version": "1.0.0",
+  "description": "Desarrolla  una  API  REST  en  backend  con  Node.JS  y  Express,  que  permita  gestionar  un  conjunto  de \r jugadores de fútbol, los cuales contienen los siguientes atributos: id, nombre, posición.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
